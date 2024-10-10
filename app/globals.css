@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
+
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--color-bg);
+  font-size: calc(100vw / 1920 *10);
+  line-height: 1.1;
+  letter-spacing: 0.1rem;
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: calc(100vw / 430 *10);
+  }
+}
+
+body {
+  min-height: 100dvh;
+}
+
+a,
+button {
+  display: block;
+}

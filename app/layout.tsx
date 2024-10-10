@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils';
 import { Header } from '@/components/shared/header';
 
 const roboto = Roboto({
-  weight: ['400', '500', '700'],
+  weight: ['400', '700'],
   variable: '--font-roboto',
   style: ['normal'],
   subsets: ['cyrillic'],
@@ -13,21 +13,20 @@ const roboto = Roboto({
 })
 
 const playfair = Playfair_Display({
-  weight: ['400', '500', '700'],
+  weight: ['400', '700'],
   variable: '--font-playfair',
-  style: ['normal'],
+  style: ['normal', 'italic'],
   subsets: ['cyrillic'],
   display: 'swap',
 })
 
 const spectral = Spectral({
-  weight: ['400', '500', '700'],
+  weight: ['400', '500', '600', '700'],
   variable: '--font-spectral',
-  style: ['normal'],
+  style: ['normal', 'italic'],
   subsets: ['cyrillic'],
   display: 'swap',
 })
-
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -35,16 +34,19 @@ export const metadata: Metadata = {
 };
 
 import "./globals.css";
+import { Scroll } from '@/components/shared/scroll';
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
   return (
     <html lang="en">
       <body
         className={
-          cn(roboto.variable, playfair.variable, spectral.variable,
+          cn(`${roboto.variable} font-roboto`, `${playfair.variable} font-playfair`, `${spectral.variable} font-spectral`,
             'relative scrollbar before:absolute before:bg-[url("/pattern/pattern_gray.svg")] before:w-full before:h-full before:z-[-1] before:opacity-10 bg-background'
           )}>
-        <Header />
-        {children}
+        <Scroll>
+          <Header />
+          {children}
+        </Scroll>
       </body>
     </html>
   );

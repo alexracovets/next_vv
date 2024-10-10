@@ -47,7 +47,7 @@ export const Header: React.FC = () => {
 
     return (
         <header>
-            <Container>
+            <Container className='h-[8.5dvh]'>
                 {/* Навігація для десктопу */}
                 <nav className="max-md:hidden w-full py-[2rem]">
                     <ul className='flex justify-center items-center'>

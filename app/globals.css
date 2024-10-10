@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -14,14 +10,16 @@ body {
 
 @layer base {
   :root {
-    --radius: 0.5rem;
+    --font-roboto: 'Roboto', sans-serif;
+    --font-playfair: 'Playfair Display', serif;
+    --font-spectral: 'Spectral', serif;
+    color: #F8F8FF;
   }
 }
 
 
 html {
   scroll-behavior: smooth;
-  background-color: var(--color-bg);
   font-size: calc(100vw / 1920 *10);
   line-height: 1.1;
   letter-spacing: 0.1rem;

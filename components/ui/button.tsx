@@ -9,15 +9,15 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "tracking-[-0.1rem] font-playfair text-[3.2rem] font-[600] bg-regal-green rounded-[1.5rem] shadow-btn",
-        mono: "font-lato text-[3.2rem] font-[400] bg-regal-green rounded-[1.5rem] shadow-mono bg-[linear-gradient(135deg,#5A5A5A,#3D3D3D)]",
-        privat: "capitalize font-lato text-[3.2rem] font-[400] bg-regal-green rounded-[1.5rem] shadow-btn bg-[#4EA524]",
+        default: "py-[2.5rem] px-[5.7rem] tracking-[-0.1rem] font-playfair text-[3.2rem] font-[600] bg-regal-green rounded-[1.5rem] shadow-btn",
+        patron: "py-[1.5rem] px-[3rem] font-playfair text-[2.1rem] font-[600] bg-regal-green rounded-[0.8rem] shadow-btn",
+        mono: "py-[2.5rem] px-[5.7rem] font-lato text-[3.2rem] font-[400] bg-regal-green rounded-[1.5rem] shadow-mono bg-[linear-gradient(135deg,#5A5A5A,#3D3D3D)]",
+        privat: "py-[2.5rem] px-[5.7rem] capitalize font-lato text-[3.2rem] font-[400] bg-regal-green rounded-[1.5rem] shadow-btn bg-[#4EA524]",
         ghost: "hover:bg-neutral-100 hover:text-neutral-900 dark:hover:bg-neutral-800 dark:hover:text-neutral-50",
         link: "text-neutral-900 underline-offset-4 hover:underline dark:text-neutral-50",
       },
       size: {
-        default: "h-auto py-[2.5rem] px-[5.7rem]",
-        sm: "h-9 rounded-md px-3",
+        default: "h-auto",
       },
     },
     defaultVariants: {

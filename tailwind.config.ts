@@ -21,6 +21,7 @@ const config: Config = {
 				'regal-bg-logo': '#00000080',
 				'regal-bg-point': '#0009',
 				'regal-white': '#F8F8FF',
+				'regal-black': '#000000',
 				'regal-beige': '#EBD7B2',
 				'regal-green': '#247616'
 			},

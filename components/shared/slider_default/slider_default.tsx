@@ -9,7 +9,6 @@ import { SliderPoint } from '@/components/shared/slider_default/slider_point';
 import { SliderArrow } from '@/components/ui/sliderArrow';
 
 export const Slider_Default: React.FC = () => {
-    const [dimensions, setDimensions] = useState({ width: 1292, height: 715 });
     const [api, setApi] = useState<CarouselApi>();
     const [apiText, setApiText] = useState<CarouselApi>();
     const [current, setCurrent] = useState(0);
@@ -41,22 +40,6 @@ export const Slider_Default: React.FC = () => {
         }
         apiText.scrollTo(current - 1);
     }, [api, apiText, current])
-
-    useEffect(() => {
-        const updateDimensions = () => {
-            const baseWidth = window.innerWidth >= 1920 ? 1920 : 430;
-            const rem = (window.innerWidth / baseWidth) * 10;
-            setDimensions({
-                width: 129.2 * rem,
-                height: 71.5 * rem,
-            });
-        };
-
-        window.addEventListener('resize', updateDimensions);
-        updateDimensions();
-
-        return () => window.removeEventListener('resize', updateDimensions);
-    }, []);
 
     const slides = [
         {
@@ -143,10 +126,8 @@ export const Slider_Default: React.FC = () => {
                         slides.map((item, index) => {
                             return (
                                 <CarouselItem key={index} className='flex justify-center items-centet pt-[5rem] cursor-pointer'>
-                                    <div className='relative flex justify-center items-center w-[129.2rem] max-md:w-[39rem] max-md:py-[1rem] '>
-                                        <Image src={`about/${item.image}`} width={dimensions.width} height={dimensions.height} alt={item.alt}
-                                            style={{ width: `${dimensions.width}px`, height: `${dimensions.height}px` }} className='rounded-[1rem]'
-                                        />
+                                    <div className='relative flex justify-center items-center w-[129.2rem] h-[71.5rem] max-md:w-[39rem] max-md:py-[1rem] '>
+                                        <Image src={`about/${item.image}`} fill alt={item.alt} className='rounded-[1rem]' />
                                         {
                                             item.points.map((item, index) => {
                                                 return (

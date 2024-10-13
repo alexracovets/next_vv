@@ -1,12 +1,12 @@
 'use client';
 
 import React, { useCallback, useEffect, useState } from 'react';
-import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
-import Image from 'next/image';
-import { SliderPoint } from './slider_point';
-import { type CarouselApi } from "@/components/ui/carousel"
-import { SliderArrow } from '@/components/ui/sliderArrow';
 import Fade from 'embla-carousel-fade';
+import Image from 'next/image';
+
+import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from '@/components/ui/carousel';
+import { SliderPoint } from '@/components/shared/slider_default/slider_point';
+import { SliderArrow } from '@/components/ui/sliderArrow';
 
 export const Slider_Default: React.FC = () => {
     const [dimensions, setDimensions] = useState({ width: 1292, height: 715 });
@@ -137,7 +137,7 @@ export const Slider_Default: React.FC = () => {
                     }
                 </CarouselContent>
             </Carousel>
-            <Carousel className='relative w-full max-md:pb-[10rem]' id="about" setApi={setApi} opts={{ dragFree: false }}>
+            <Carousel className='relative w-full mb-[6rem] max-md:pb-[10rem]' id="about" setApi={setApi} opts={{ dragFree: false }}>
                 <CarouselContent>
                     {
                         slides.map((item, index) => {

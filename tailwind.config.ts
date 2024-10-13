@@ -13,19 +13,20 @@ const config: Config = {
 			fontFamily: {
 				'roboto': ["var(--font-roboto)"],
 				'spectral': ["var(--font-spectral)"],
-				'playfair': ["var(--font-playfair)"]
+				'playfair': ["var(--font-playfair)"],
+				'lato': ["var(--font-lato)"]
 			},
 			colors: {
 				'background': '#0d0d0d',
 				'regal-bg-logo': '#00000080',
-				'regal-bg-point':'#0009',
+				'regal-bg-point': '#0009',
 				'regal-white': '#F8F8FF',
 				'regal-beige': '#EBD7B2',
+				'regal-green': '#247616'
 			},
-			borderRadius: {
-				lg: 'var(--radius)',
-				md: 'calc(var(--radius) - 2px)',
-				sm: 'calc(var(--radius) - 4px)'
+			boxShadow: {
+				'btn': '0 0 2rem #247616',
+				'mono': '0 0 2rem #7474748c'
 			}
 		}
 	},

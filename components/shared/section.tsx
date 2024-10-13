@@ -9,6 +9,6 @@ interface Props {
 
 export const Section: React.FC<React.PropsWithChildren<Props>> = ({ className, children }) => {
     return (
-        <section className={cn('py-[20rem]', className)}>{children}</section>
+        <section className={cn('my-[20rem]', className)}>{children}</section>
     );
 };

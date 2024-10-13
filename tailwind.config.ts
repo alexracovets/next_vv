@@ -17,7 +17,8 @@ const config: Config = {
 			},
 			colors: {
 				'background': '#0d0d0d',
-				'regal-bgLogo': '#00000080',
+				'regal-bg-logo': '#00000080',
+				'regal-bg-point':'#0009',
 				'regal-white': '#F8F8FF',
 				'regal-beige': '#EBD7B2',
 			},

@@ -45,7 +45,7 @@ export const metadata: Metadata = {
 import "./globals.css";
 export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode; }>) {
   return (
-    <html lang="en">
+    <html lang="ua">
       <body
         className={
           cn(`${roboto.variable} font-roboto`, `${playfair.variable} font-playfair`, `${spectral.variable} font-spectral`, `${lato.variable} font-lato`,

@@ -6,9 +6,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from '@/lib/utils';
 import Image from 'next/image';
 
-interface Props { className?: string; }
-
-export const Patron: React.FC<React.PropsWithChildren<Props>> = ({ className, children }) => {
+export const Patron: React.FC = () => {
 
     const list = [
         {

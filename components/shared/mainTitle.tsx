@@ -22,10 +22,7 @@ export const MainTitle: React.FC<React.PropsWithChildren<Props>> = () => {
                     after:content-['•'] after:absolute after:absolute after:right-[-0.1rem] after:bottom-[-0.1rem] after:flex after:justify-center after:items-center after:text-regal-beige after:border-[0.2rem] after:border-regal-beige after:w-[1.4rem] after:h-[1.4rem]
                     max-md:h-[33.6rem] max-md:p-[2rem]
                 ">
-                    <h1 className="
-                        text-[15rem] text-center text-regal-white font-playfair font-[600] uppercase mb-[4rem] max-md:mb-[3rem] max-md:text-[3.2rem]max-md:text-[9rem]
-                        max-md:text-[9rem]
-                    ">
+                    <h1 className="text-[15rem] text-center text-regal-white font-playfair font-[600] uppercase mb-[4rem] max-md:mb-[3rem] max-md:text-[3.2rem]max-md:text-[9rem] max-md:text-[9rem]">
                         А<span className="italic">Ф</span>ОН
                     </h1>
                     <div className="

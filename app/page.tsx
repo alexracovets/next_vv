@@ -1,6 +1,7 @@
 'use client';
 
 import { Slider_Default } from "@/components/shared/slider_default/slider_default";
+import { GiftsBlock } from "@/components/shared/giftsBlock";
 import { Container } from "@/components/shared/container";
 import { MainTitle } from "@/components/shared/mainTitle";
 import { Section } from "@/components/shared/section";
@@ -38,6 +39,12 @@ export default function Home() {
           <Title>Стати меценатом</Title>
           <Patron />
         </Container>
+      </Section>
+      <Section>
+        <Container>
+          <Title>подарунки за ваші внески</Title>
+        </Container>
+        <GiftsBlock />
       </Section>
     </main>
   );

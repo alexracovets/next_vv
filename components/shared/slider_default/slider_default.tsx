@@ -4,7 +4,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 import Fade from 'embla-carousel-fade';
 import Image from 'next/image';
 
-import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from '@/components/ui/carousel';
+import { Carousel, CarouselContent, CarouselItem, CarouselApi } from '@/components/ui/carousel';
 import { SliderPoint } from '@/components/shared/slider_default/slider_point';
 import { SliderArrow } from '@/components/ui/sliderArrow';
 
@@ -99,9 +99,9 @@ export const Slider_Default: React.FC = () => {
             ]
         }
     ]
+
     return (
         <>
-
             <Carousel className='relative w-full pointer-events-none mb-[3rem] max-md:mb-[1rem]' setApi={setApiText} plugins={[Fade()]}>
                 <CarouselContent>
                     {
@@ -120,7 +120,10 @@ export const Slider_Default: React.FC = () => {
                     }
                 </CarouselContent>
             </Carousel>
-            <Carousel className='relative w-full mb-[6rem] max-md:pb-[10rem]' id="about" setApi={setApi} opts={{ dragFree: false }}>
+            <Carousel className='relative w-full mb-[6rem] max-md:pb-[10rem]' id="about" setApi={setApi}
+                opts={{
+                    skipSnaps: true,
+                }}>
                 <CarouselContent>
                     {
                         slides.map((item, index) => {

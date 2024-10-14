@@ -81,3 +81,12 @@ button {
 .card_item_0.active {
   background: linear-gradient(137.3deg, #DCA61F 10.32%, #F6EC97 31.23%, #FADD5A 50.12%, #FBDE9C 67.34%, #E3A21F 86.35%);
 }
+
+.card_item_1 {
+  background: linear-gradient(137.3deg, #977A50 10.32%, #DEB984 31.23%, #B89263 50.12%, #AF895C 67.34%, #D7B27B 86.35%);
+}
+
+.card_item_1::before,
+.card_item_1::after {
+  opacity: 0.3;
+}

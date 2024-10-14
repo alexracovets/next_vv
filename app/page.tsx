@@ -8,6 +8,7 @@ import { Section } from "@/components/shared/section";
 import { Patron } from "@/components/shared/patron";
 import { Title } from "@/components/shared/title";
 import { Button } from "@/components/ui/button";
+import { Dash } from "@/components/ui/dash";
 
 export default function Home() {
   return (
@@ -46,6 +47,26 @@ export default function Home() {
         </Container>
         <GiftsBlock />
       </Section>
-    </main>
+      <Section>
+        <Container>
+          <Title className="w-[90rem] mx-auto">Приєднатись до Команди</Title>
+          <div className="text-[4rem] text-center font-spectral font-[500] leading-[4.8rem] max-w-[124.6rem] mx-auto mb-[5rem]">
+            Вам відгукується наш проєкт і Ваше серце відкрите, щоб допомогти важливій справі?
+          </div>
+          <Dash className="mb-[5rem]" />
+          <div className="text-[3.2rem] text-center font-spectral max-w-[124.6rem] mx-auto mb-[5rem]">
+            Приєднуйся до нашої команди волонтерів та зроби всій внесок у відбудову. <br />
+            Якщо Ви хочете організувати свій невеликий збір серед друзів або колег, – ми надамо вам підтримку і всі необхідні матеріали
+          </div>
+          <Button>Приєднатись</Button>
+        </Container>
+      </Section>
+      <Section>
+        <Container>
+          <Title>Хронологія будівництва</Title>
+
+        </Container>
+      </Section>
+    </main >
   );
 }

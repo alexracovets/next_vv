@@ -27,7 +27,9 @@ const config: Config = {
 			},
 			boxShadow: {
 				'btn': '0 0 2rem #247616',
-				'mono': '0 0 2rem #7474748c'
+				'mono': '0 0 2rem #7474748c',
+				'gift': '0 0 0.5rem #000000',
+				'brown_gift': '0 0 0.5rem #F8F8FF'
 			}
 		}
 	},
